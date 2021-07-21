@@ -1,0 +1,532 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Playfair Display", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  font: 18px;
+  width: 100%;
+  font-family: var(--primary-font), var(--secondary-font);
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+}
+
+section,
+footer {
+  display: flex;
+  width: 96%;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secondary-font);
+}
+
+.intro,
+.ingredients,
+.instruction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#intro {
+  margin-top: 1.7rem;
+}
+
+.intro h1 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 32px;
+}
+
+.recipe-intro {
+  display: flex;
+}
+
+.recipe-intro img {
+  align-self: flex-start;
+  margin-top: 0.3rem;
+}
+
+.recipe-intro p {
+  width: 17.78rem;
+  height: 4.89rem;
+  margin-left: 0.5rem;
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.67rem;
+  line-height: 15px;
+  color: #4f4f4f;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero img {
+  width: 19rem;
+  height: 11.88rem;
+  border-radius: 12px;
+  margin-top: 0.8rem;
+}
+
+.hero .yields {
+  display: flex;
+  align-items: center;
+  margin-top: 1.33rem;
+}
+
+.yields img {
+  height: 0.67rem;
+  width: 0.75rem;
+  border-radius: 0px;
+}
+
+.yields > div {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  margin-left: 0.3rem;
+}
+
+.yields > div > p {
+  font-weight: bold;
+  font-size: 0.4rem;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+
+.yields > div > p:last-child {
+  font-weight: 500;
+  font-size: 0.56rem;
+  line-height: 12px;
+  color: #f2994a;
+}
+
+.timmer {
+  display: flex;
+  margin-top: 1.15rem;
+  flex-direction: row;
+}
+
+.timmer > div {
+  display: flex;
+  font-family: Montserrat;
+  flex-grow: 1;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-right: 2.29rem;
+}
+
+.timmer > div > img {
+  width: 0.79rem;
+  height: 0.79rem;
+}
+
+.timmer > div > div {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  margin-left: 0.3rem;
+}
+
+.timmer > div > div > p {
+  font-weight: bold;
+  font-size: 0.4rem;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+
+.timmer > div > div > p:last-child {
+  font-weight: 500;
+  font-size: 0.56rem;
+  line-height: 12px;
+  color: #333333;
+}
+
+.ingredients {
+  margin-top: 1.67rem;
+}
+
+.ingredients h2 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.ingredients h3 {
+  font-family: Playfair Display;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 0.72rem;
+  color: #333333;
+}
+
+.ingre-items {
+  margin-top: 1.3rem;
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.ingre-items > div {
+  display: flex;
+  font-family: Montserrat;
+
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.ingre-items > div > input {
+  margin-right: 0.44rem;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.ingre-items .one,
+.two,
+.four,
+.six,
+.eight,
+.nine,
+.ten {
+  display: flex;
+
+  font-family: Montserrat;
+
+  font-weight: normal;
+  font-size: 0.78rem;
+  line-height: 25px;
+  color: #333333;
+}
+
+.ingre-items .three,
+.five,
+.seven {
+  display: flex;
+  font-family: Montserrat;
+
+  font-weight: normal;
+  font-size: 0.78rem;
+  line-height: 17px;
+  color: #333333;
+}
+
+.ingre-items p {
+  width: 17rem;
+}
+
+.ingredients .cheesecake {
+  margin-top: 2.3rem;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.ten > p > span {
+  font-weight: 500;
+  font-style: oblique;
+}
+
+.instruction h1 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 32px;
+  color: #333333;
+  margin-top: 1.67rem;
+  margin-bottom: 1.56rem;
+}
+
+.instruction div {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.instruction .number {
+  display: flex;
+  justify-content: center;
+
+  background: #f2994a;
+  border-radius: 6px;
+  width: 2rem;
+  height: 2rem;
+  font-family: Playfair Display;
+
+  font-weight: bold;
+  font-size: 1.33rem;
+  line-height: 32px;
+  color: #fff;
+  margin-right: 0.83rem;
+  padding: 0px;
+}
+
+.instruction div > p {
+  width: 16.1rem;
+  font-family: Montserrat;
+
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #333333;
+}
+
+.instruction .source {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.67rem;
+  line-height: 150%;
+
+  color: #bdbdbd;
+  width: 19.55rem;
+}
+
+footer div {
+  margin-top: 7.16rem;
+  margin-bottom: 1.33rem;
+
+  width: 17.94rem;
+}
+
+footer p {
+  width: 15.94rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 0.78rem;
+  line-height: 17px;
+
+  width: 100%;
+  text-align: center;
+
+  color: #828282;
+}
+
+footer a {
+  list-style: none;
+  text-decoration: none;
+  color: #828282;
+}
+
+footer a:first-child {
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 599px) {
+  .sidebar {
+    display: none;
+  }
+
+  .instruction .large {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  section,
+  footer {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .intro h1 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .recipe-intro p {
+    width: 32.8rem;
+    height: 2.83rem;
+    line-height: 17px;
+  }
+
+  .hero img {
+    width: 58.83rem;
+    height: 26.11rem;
+  }
+
+  .hero .yields {
+    display: none;
+  }
+
+  .timmer {
+    display: none;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 12rem;
+    height: 20.38rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    position: absolute;
+
+    left: 984px;
+    top: 665px;
+  }
+
+  .sidebar img {
+    width: 1.505rem;
+  }
+
+  .sidebar .serving {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+  }
+
+  .serving > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 2rem;
+  }
+
+  .serving > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0.78rem;
+  }
+
+  .serving > div > div > p {
+    font-weight: bold;
+    font-size: 0.55rem;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #bdbdbd;
+  }
+
+  .serving > div > div > p:last-child {
+    font-weight: 500;
+    font-size: 0.77rem;
+    line-height: 17px;
+    color: #333333;
+    margin-top: 0.22rem;
+  }
+
+  .serving .yielding {
+    margin-top: -0.3rem;
+  }
+
+  .yielding #orange {
+    font-weight: 500;
+    font-size: 0.77rem;
+    line-height: 17px;
+    color: #f2994a;
+    margin-top: 0.22rem;
+  }
+
+  .instruction .source {
+    width: 27.7rem;
+  }
+
+  .instruction .small {
+    display: none;
+  }
+
+  .ingre-items p {
+    width: 33.33rem;
+  }
+
+  .instruction div > p {
+    width: 33.33rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .sidebar {
+    left: 475px;
+    top: 485px;
+  }
+
+  .hero img {
+    width: 34rem;
+    height: 15.88rem;
+    border-radius: 12px;
+    margin-top: 0.8rem;
+  }
+
+  .ingre-items p {
+    width: 17rem;
+  }
+
+  .instruction div > p {
+    width: 24rem; /*👉16.1👈*/
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+  .sidebar {
+    left: 700px;
+    top: 711px;
+  }
+
+  .hero img {
+    width: 45.5rem;
+    height: 20.88rem;
+    border-radius: 12px;
+    margin-top: 0.8rem;
+  }
+
+  .sidebar {
+    left: 700px;
+    top: 595px;
+  }
+
+  .ingre-items p {
+    width: 17rem;
+  }
+
+  .instruction div > p {
+    width: 28rem;
+  }
+}
